@@ -1,0 +1,19 @@
+{
+  "name": "env-tracker",
+  "version": "1.0.0",
+  "description": "local environment tracker",
+  "main": "node-server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/auxcodes/pi-env-tracker.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aux.codes",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.1.0",
+    "firebase": "^7.19.1"
+  }
+}
