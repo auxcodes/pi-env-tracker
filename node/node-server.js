@@ -2,8 +2,9 @@
 const http = require('http');
 const Database = require('better-sqlite3');
 const dbfile = '../env-tracker.db';
-
 const db = new Database(dbfile, { verbose: console.log });
+const fbAdmin = require('firebase-admin');
+
  
 // Configure our HTTP server to respond with Hello World to all requests.
 let server = http.createServer(function (request, response) {
