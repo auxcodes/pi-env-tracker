@@ -2,3 +2,5 @@ env-tracker.db
 node/node_modules
 firebase
 .vs
+.env
+pi_env
