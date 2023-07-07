@@ -6,7 +6,7 @@ import datetime
 import sqlite3
 
 import local_db as localdb
-import temp_data as tempdata
+import local_data as localdata
  
 try:
     sensor = adafruit_bme680.Adafruit_BME680_I2C(board.I2C())
@@ -27,7 +27,7 @@ while True:
         
         if temperature is not None:
             print("RT - Temp = {0:0.1f} C, Humidity = {1:0.1f} %, Pressure = {2:0.1f} hPa, Gas = {3:0.1f} ohms".format(temperature, humidity, pressure, gas))
-            tempdata.addReadings({"temperature": temperature, "humidity": humidity, "pressure": pressure, "gas": gas})
+            localdata.addReadings({"temperature": temperature, "humidity": humidity, "pressure": pressure, "gas": gas})
         else:
             print("Sensor failure. Check wiring.");
 
